@@ -134,18 +134,6 @@ const SpotifySearch: React.FC = () => {
                       {track.album.name}
                     </Link>
                     {/* Wanted to use a map solution but it didn't work and resulted in [object Object], [object Object] etc*/}
-                    {/*<Typography variant="body2">*/}
-                    {/*  {track.artists.map((artist: any) => (*/}
-                    {/*      <Link*/}
-                    {/*          key={artist.id}*/}
-                    {/*          href={artist.external_urls.spotify}*/}
-                    {/*          target="_blank"*/}
-                    {/*          rel="noopener noreferrer"*/}
-                    {/*      >*/}
-                    {/*        {artist.name}*/}
-                    {/*      </Link>*/}
-                    {/*  )).join(', ')}*/}
-                    {/*</Typography>*/}
                     <Typography variant="body2">
                       {(() => {
                         const artistLinks: JSX.Element[] = [];
